@@ -148,13 +148,17 @@ header {
   background-image: linear-gradient(rgb(0, 200, 255),rgba(0, 242, 255, 0.046)),url("images/Background/pexels-luis-quintero-2471234.jpg");
   background-attachment: fixed;
   background-size: cover;
-  padding: 100px 40px;
+  padding: 100px 0;
   font-size: 20px;
   display: flex;
   flex-direction: column;
   gap: 100px;
   justify-content: center;
   align-items: center;
+}
+.courses-title {
+  font-size: 50px;
+  text-align: center;
 }
 /* Generic settings for each course */
 .course {
@@ -165,10 +169,12 @@ header {
   justify-content:center;
   text-align: center;
   padding: 40px;
-  border-radius: 50px;
+
   transition: background-color .5s;
 }
-
+.corses-title {
+  display: none;
+}
 /* Generic rules for course image */
 .course-img {
   width: 100%;
@@ -177,9 +183,9 @@ header {
 }
 /* Courses title */
 .course-desc-title {
-  color: var(--secondary-color);
   margin-bottom: 20px;
   font-size: 30px;
+  text-align: center;
 }
 .course-desc {
   border-radius: 0 0 50px 50px;
@@ -190,6 +196,7 @@ header {
 .course1-img{
     background: linear-gradient(rgba(0, 200, 200, 0.200),rgba(0, 200, 200, 0.200)),url("./images/Courses/course1.png");
     background-size: cover;
+    background-position: center;
 }
 .course1 {
   background: rgba(0,0,255,.300);
@@ -201,6 +208,7 @@ header {
 .course2-img{
     background: linear-gradient(rgba(111, 200, 200, 0.200),rgba(0, 200, 200, 0.200)),url("./images/Courses/course2.png");
     background-size: cover;
+    background-position: center;
 }
 .course2 {
   background: rgba(255,0,0,.3);
@@ -212,6 +220,7 @@ header {
 .course3-img{
     background: linear-gradient(rgba(0, 200, 200, 0.200),rgba(0, 200, 200, 0.200)),url("./images/Courses/course3.png") center;
     background-size: cover;
+    background-position: center;
 }
 .course3 {
   background: rgba(128, 0, 128, 0.4);
@@ -223,6 +232,7 @@ header {
 .course4-img{
     background: linear-gradient(rgba(0, 200, 200, 0.200),rgba(0, 200, 200, 0.200)),url("./images/Courses/course4.png");
     background-size: cover;
+    background-position: center;
 }
 .course4 {
   background: rgba(255, 69, 0, .3);
@@ -238,10 +248,7 @@ header {
   border-radius: 20px;
   margin-top: 20px;
 }
-/* Course title */
-.courses-title { 
-  font-size: 50px;
-}
+
 /* Hover effect */
 .course1:hover {
   background: rgba(0, 0, 139);
@@ -258,7 +265,7 @@ header {
 /* ================ Courses end ================ */
 /* ================ Quotes ================ */
 .quotes-section {
-  background: var(--primary-color);
+  background:url(images/Background/giphy.webp);
   display:flex;
   justify-content: center;
   align-items: center;
